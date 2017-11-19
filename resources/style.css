@@ -2,24 +2,175 @@ html {
 
 }
 
-.header {
+/* Header Styles */
+div {
+  border: 1px solid black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  }
+  position: fixed;
+}
 
-#logo {
+.logo {
   color: MediumAquamarine;
-  display: inline-flex;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 30px;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.logo span{
+  padding-left: 30px;
+}
+
+.nav {
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav span a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  align-items: center;
+}
+
+
+/* Main Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 100px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.large {
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leadstory {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+
+}
+
+.imagecontent {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+
+}
+
+#main {
+  text-align: center;
+  height: 300px;
+  width: 630px;
+  text-align: left;
+  flex-direction: column;
+  background-image: url(story-main.png);
+  background-repeat: no-repeat;
+}
+
+#two {
+  background-image: url(story-1.png);
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+#three {
+  background-image: url(camera.png);
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.stories {
+  display: inline-flex;
+  flex-direction: row;
+  width: 630px;
+}
+
+.story {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+
+.medium {
+  width: 300px;
+  display: flex;
+}
+
+.catimage {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(story-3.png);
+}
+
+
+.small {
+  width:240px;
+  display: flex;
+  flex-direction: column;
   }
 
-#nav {
-  display: inline-block;
-  justify-content: space-around;
+.bite {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsbires {
+  display: flex;
+  flex-direction: column;
+}
+
+.textcontent {
+
+}
+
+.naritive {
+  font-family:  Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+footer {
+  display: inline-flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
   align-items: center;
-  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
